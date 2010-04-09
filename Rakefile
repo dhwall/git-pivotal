@@ -7,8 +7,8 @@ $LOAD_PATH.unshift('lib')
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "git-pivotal"
-    gemspec.summary = "A collection of git utilities to ease integration with Pivotal Tracker"
+    gemspec.name = "idealian-git-pivotal"
+    gemspec.summary = "a fork of git-pivital to support owner picking and different local integration branch A collection of git utilities to ease integration with Pivotal Tracker"
     gemspec.description = "A collection of git utilities to ease integration with Pivotal Tracker"
     gemspec.email = "jeff@trydionel.com"
     gemspec.homepage = "http://github.com/trydionel/git-pivotal"
