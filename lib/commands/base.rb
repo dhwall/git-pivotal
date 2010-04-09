@@ -41,10 +41,12 @@ module Commands
       token = get("git config --get pivotal.api-token").strip
       id    = get("git config --get pivotal.project-id").strip
       name  = get("git config --get pivotal.full-name").strip
+      target = get("git config --get pivotal.target").strip || "master"
 
       options[:api_token] = token unless token == ""
       options[:project_id] = id unless id == ""
       options[:full_name] = name unless name == ""
+      options[:target] = target
     end
 
     def parse_argv(*args)

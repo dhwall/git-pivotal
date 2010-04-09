@@ -41,6 +41,11 @@ Once installed, git pivotal needs three bits of info: your Pivotal Tracker API T
 The project id is best placed within your project's git config:
 
     git config -f .git/config pivotal.project-id 88888
+    
+Different local integration branch (default: master)
+
+    git config -f .git/config pivotal.target develop
+
 
 If you're not interested in storing these options in git, you can pass them into git pivotal as command line arguments.  See the usage guides for more details.
 

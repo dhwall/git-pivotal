@@ -12,7 +12,7 @@ begin
     gemspec.description = "A collection of git utilities to ease integration with Pivotal Tracker"
     gemspec.email = "jeff@trydionel.com"
     gemspec.homepage = "http://github.com/trydionel/git-pivotal"
-    gemspec.authors = ["Jeff Tucker", "Sam Stokes"]
+    gemspec.authors = ["Jeff Tucker", "Sam Stokes", "Taylor Luk"]
     
     gemspec.add_dependency "nokogiri"
     gemspec.add_dependency "rest-client"

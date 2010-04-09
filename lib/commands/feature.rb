@@ -15,5 +15,15 @@ module Commands
       "feature"
     end
 
+    private
+      def story
+        # Try your own story first
+        @story ||= project.stories.find(:conditions => { 
+          :story_type => type, :current_state => :unstarted, :owner => options[:full_name]
+        }, :limit => 1).first
+
+        # try anything not started
+        @story ||= project.stories.find(:conditions => { :story_type => type, :current_state => :unstarted }, :limit => 1).first
+      end
   end
 end

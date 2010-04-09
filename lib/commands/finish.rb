@@ -21,7 +21,7 @@ module Commands
       put "Marking Story #{story_id} as finished..."
       if story.update_attributes(:current_state => :finished)
       
-        target_branch = "develop"
+        target_branch = options[:target]
         put "Merging #{current_branch} into #{target_branch}"
         sys "git checkout #{target_branch}"
         sys "git merge --no-ff #{current_branch}"
