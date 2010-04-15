@@ -30,7 +30,7 @@ When on a feature branch, this command will close the associated story in Pivota
 ##Installation
 To install git-pivotal, simply run
 
-    [sudo] gem install git-pivotal
+    [sudo] gem install idealian-git-pivotal
 
 <h2 id="config">Configuration</h2>
 Once installed, git pivotal needs three bits of info: your Pivotal Tracker API Token, your name as it appears in Pivotal Tracker and your Pivotal Tracker project id.  The former two are best set as a global git config options:
